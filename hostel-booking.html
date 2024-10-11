@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOSTEL BOOKING</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+    <h1>WELCOME TO HOSTEL BOOKING</h1>
+    <br>
+    <nav>
+        <a href="Homepage.html">Home</a>
+       
+        <a href="Hostel-booking.html">Hostel booking</a>
+        <a href="About.html">About</a>
+    </nav>
+    <br><br>
+    
+    <div class="search-bar">
+        <form action="/search" method="GET">
+            <input type="text" name="query" placeholder="Search...">
+            <button type="submit">Search</button>
+        </form>
+    </div>
+   
+    <p>FEATURED HOSTELS</p>
+    <div class="marquee-container">
+        <div class="marquee">
+            <img src="E:\YEAR2 SEM1\WEB Prog\hostelb\must1.svg" alt="Must1 Hostel">
+            <img src="E:\YEAR2 SEM1\WEB Prog\hostelb\makerere2.svg" alt="Makerere2 Hostel">
+            <img src="E:\YEAR2 SEM1\WEB Prog\hostelb\muk4.svg" alt="Muk4 Hostel">
+            <img src="E:\YEAR2 SEM1\WEB Prog\hostelb\kyu1.svg" alt="Kyu1 Hostel">
+        </div>
+    </div>
+    <br>
+
+    <div>
+        <h2>Book Your Hostel</h2>
+        <form action="/book" method="POST">
+            <div class="form-group">
+                <label for="hostel">Select Hostel:</label>
+                <select id="hostel" name="hostel" class="form-control">
+                    <option value="must1">Must1 Hostel</option>
+                    <option value="makerere2">Makerere2 Hostel</option>
+                    <option value="muk4">Muk4 Hostel</option>
+                    <option value="kyu1">Kyu1 Hostel</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="checkin">Check-in Date:</label>
+                <input type="date" id="checkin" name="checkin" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="checkout">Check-out Date:</label>
+                <input type="date" id="checkout" name="checkout" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="room-type">Room Type:</label>
+                <select id="room-type" name="room-type" class="form-control">
+                    <option value="single">Single</option>
+                    <option value="double">Double</option>
+                    <option value="triple">Triple</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary">Book Now</button>
+        </form>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2024 Hostel Booking System</p>
+            <ul class="contact-list">
+                <li>
+                    <a href="https://wa.me/your-whatsapp-number" target="_blank">
+                        <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                        WhatsApp: +256777274183
+                    </a>
+                </li>
+                <li>
+                    <a href="mailto:kainamuradarius@gmail.com" target="_blank">
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                        Email: kainamuradarius@gmail.com
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
